@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<link lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editor de memes</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body id="body" class="light-mood" >
+      <!-- Header -->
+    <header>
+        <!-- Titulo principal -->
+      <h1>Generador de Memes</h1>
+      <!-- Fin Titulo principal -->
+      <!-- Botones de accion -->
+      <div>
+        <button><i class="fas fa-file-image"></i>Imagen</button>
+        <button><i class="fas fa-font"></i>Texto</button>
+        <button id="swich-theme"><i class="far fa-lightbulb"></i>Tema claro</button>
+      </div>
+      <!-- Fin Botones de accion -->
+    </header>
+      <!-- Meme -->
+    <main>
+      <div class="meme-container">
+        <p class="meme-text">Top Text</p>
+        <img class="meme-img" src="https://via.placeholder.com/610x372" alt="" />
+        <p class="meme-text">Bottom Text</p>
+      </div>
+      <button><i class="fas fa-download"></i>Descargar meme</button>
+    </main>
+      <!-- Fin Meme -->
+    <!-- Barra lateral -->
+    <aside class="panel ocultar">
+      <button
+        class="panel-close-button"
+        id="panel-close-button"
+        aria-label="Cerrar panel"
+      >
+        <i class="fas fa-times"></i>
+      </button>
+      <section class="panel-img"></section>
+      <section class="panel-text">
+        <h2 class="panel-title">TEXTO</h2>
+        <div class="panel-control">
+          <h3 class="panel-control-title">SUPERIOR</h3>
+          <textarea class="panel-control-input">TOP TEXT</textarea>
+        </div>
+      </section>
+    </aside>
+    <!-- Fin Barra lateral -->
+  </body>
+
+  <script src="./js/app.js"></script>
+
+</html>
